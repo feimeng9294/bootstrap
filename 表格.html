@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<!--应用媒体查询，使之适应移动设备-->
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>流动布局</title>
+<!--载入bootstrap样式表文件-->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+<!--需要使用响应式设计时需要加载-->
+<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css"/>
+<!--载入bootstrap　js文件-->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<!--截入jquery库文件-->
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<!--bootstrap只支持html5,IE9以下不支持，载入html5.js文件进行兼容-->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="container">
+<h1 class="page-header">表格 <small><code>&lt;table&gt;</code></small></h1>
+<h2>基本的table类</h2>
+ <table class="table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>下载量</th>
+      <th>图书出版</th>
+      <th>外链数</th>
+    </tr>
+  </thead>
+  <tr>
+    <td>Wordpress</td>
+    <td>644,880</td>
+    <td>83</td>
+    <td>26,900</td>
+  </tr>
+  <tr>
+    <td>Joomla</td>
+    <td>86,547</td>
+    <td>64</td>
+    <td>45,600</td>
+  </tr>
+  <tr>
+    <td>Drupal</td>
+    <td>22,836</td>
+    <td>65</td>
+    <td>37,100</td>
+  </tr>
+</table>
+
+<h2>奇偶行背景不同</h2>
+ <table class="table table-striped">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>下载量</th>
+      <th>图书出版</th>
+      <th>外链数</th>
+    </tr>
+  </thead>
+  <tr>
+    <td>Wordpress</td>
+    <td>644,880</td>
+    <td>83</td>
+    <td>26,900</td>
+  </tr>
+  <tr>
+    <td>Joomla</td>
+    <td>86,547</td>
+    <td>64</td>
+    <td>45,600</td>
+  </tr>
+  <tr>
+    <td>Drupal</td>
+    <td>22,836</td>
+    <td>65</td>
+    <td>37,100</td>
+  </tr>
+</table>
+
+<h2>添加边框并带有圆角效果</h2>
+ <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>下载量</th>
+      <th>图书出版</th>
+      <th>外链数</th>
+    </tr>
+  </thead>
+  <tr>
+    <td>Wordpress</td>
+    <td>644,880</td>
+    <td>83</td>
+    <td>26,900</td>
+  </tr>
+  <tr>
+    <td>Joomla</td>
+    <td>86,547</td>
+    <td>64</td>
+    <td>45,600</td>
+  </tr>
+  <tr>
+    <td>Drupal</td>
+    <td>22,836</td>
+    <td>65</td>
+    <td>37,100</td>
+  </tr>
+</table>
+
+<h2>使用table-condensed类压缩表格</h2>
+ <table class="table table-condensed table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>下载量</th>
+      <th>图书出版</th>
+      <th>外链数</th>
+    </tr>
+  </thead>
+  <tr>
+    <td>Wordpress</td>
+    <td>644,880</td>
+    <td>83</td>
+    <td>26,900</td>
+  </tr>
+  <tr>
+    <td>Joomla</td>
+    <td>86,547</td>
+    <td>64</td>
+    <td>45,600</td>
+  </tr>
+  <tr>
+    <td>Drupal</td>
+    <td>22,836</td>
+    <td>65</td>
+    <td>37,100</td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

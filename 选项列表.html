@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<!--应用媒体查询，使之适应移动设备-->
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>流动布局</title>
+<!--载入bootstrap样式表文件-->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+<!--需要使用响应式设计时需要加载-->
+<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css"/>
+<!--载入bootstrap　js文件-->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<!--截入jquery库文件-->
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<!--bootstrap只支持html5,IE9以下不支持，载入html5.js文件进行兼容-->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="container">
+<h1 class="page-header">选择列表</h1>
+<!--默认是单选，添加multiple属性可以变换成多选-->
+<select multiple="multiple">
+   <option value="河北">河北</option>
+   <option value="江西">江西</option>
+   <option value="湖南">湖南</option>
+   <option value="湖北">湖北</option>
+</select>
+</div>
+</body>
+</html>

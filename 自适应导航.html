@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<!--应用媒体查询，使之适应移动设备-->
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>流动布局</title>
+<!--载入bootstrap样式表文件-->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+<!--需要使用响应式设计时需要加载-->
+<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css"/>
+<!--截入jquery库文件-->
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<!--载入bootstrap　js文件-->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<!--bootstrap只支持html5,IE9以下不支持，载入html5.js文件进行兼容-->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<div class="container">
+<h1 class="page-header">导航</h1>
+
+
+
+    <!--navbar-fixed-top类将导航自适应百分比显示，并始终停留在头部,navbar-fixed-bottom则始终停留在页面底部-->
+	<div class="navbar navbar-fixed-top">
+
+<!--要做自适应的导航，首先要引入bootstrap-responsive.css文件！在你想要隐藏的标签外围加nav-collapse类（在宽度小于940px时会自动隐藏该元素），同时添加一个A标签（按钮）指定到隐藏的元素，使之作为下拉菜单！-->
+	    <!--navbar-inner类帮助渲染背景-->
+		<div class="navbar-inner">
+		<a href="#" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+			<span class="icon-bar"></span><!--一条横扛-->
+			<span class="icon-bar"></span><!--一条横扛-->
+			<span class="icon-bar"></span><!--一条横扛-->
+		</a>
+		<a class="brand" href="#">Bootstrap</a>
+			<div class="nav-collapse">
+					<!--nav类帮助文字浮动-->
+					<ul class="nav">
+					   <!--active帮助高亮显示当前页面-->
+					   <li class="active"><a href="#">首页</a></li>
+					   <li><a href="#">学校简介</a></li>
+					   <!--注意：dropdown插件早已集成到bootstrop.js中，因其用到了JQ库，所以必须在bootstrap.js之前先引入JQ库!!!!!-->
+					   <li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">专业设置<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+							   <li><a href="#">经典西点</a></li>
+							   <li><a href="#">粤菜大佬</a></li>
+							   <li><a href="#">金牌大师</a></li>
+							</ul>
+					   </li>
+					   <li><a href="#">烹饪大师</a></li>
+					   <li><a href="#">网上报名</a></li>
+					</ul>
+					<form class="navbar-search" action="">
+					<input type="text" name="keyword" class="search-query"/>
+					</form>
+					<ul class="nav pull-right">
+					   <li><a href="#">登入</a></li>
+					   <!--divider-vertical类帮助渲染一个分隔线-->
+					   <li class="divider-vertical"></li>
+					   <li><a href="#">注册</a></li>
+					</ul>
+			</div>
+		</div>
+
+
+	</div>
+
+
+
+</div>
+
+
+</body>
+</html>

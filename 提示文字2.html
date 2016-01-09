@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<!--应用媒体查询，使之适应移动设备-->
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>流动布局</title>
+<!--载入bootstrap样式表文件-->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+<!--需要使用响应式设计时需要加载-->
+<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css"/>
+<!--截入jquery库文件-->
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<!--载入bootstrap　js文件-->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<!--bootstrap只支持html5,IE9以下不支持，载入html5.js文件进行兼容-->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<div class="container">
+<h1 class="page-header">链接提示文字</h1>
+
+<!--借助tooltip和popover插件，可以渲染出漂亮的链接文字效果，tooltip要用到tooltip插件，而popover要用到tooltip和popover两个插件，这些全部集成在bootstrap.js中，要运用这些插件还要借助js来实现！-->
+<a href=-"#" title="tooltip插件" rel="tooltip" class="btn btn-primary">tooltip</a>
+<a href="#" title="提示" data-content="这是popover插件" rel="popover" class="btn btn-primary">popover</a>
+
+<script type="text/javascript">
+  $("a[rel=tooltip]").tooltip();
+  $("a[rel=popover]").popover();
+</script>
+</div>
+</body>
+</html>

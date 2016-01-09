@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<!--应用媒体查询，使之适应移动设备-->
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>流动布局</title>
+<!--载入bootstrap样式表文件-->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+<!--需要使用响应式设计时需要加载-->
+<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css"/>
+<!--载入bootstrap　js文件-->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<!--截入jquery库文件-->
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<!--bootstrap只支持html5,IE9以下不支持，载入html5.js文件进行兼容-->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="container">
+  <h1 class="page-header">按钮 <small>按钮的基本样式</small></h1>
+  <!--btn类提供了最基本的按钮样式，此外提供了btn-primary(其中一种)这种类似的颜色样式，btn-large用来定义表单形状大小，icon-shopping-cart展示出购物车的小图标，还有类似icon-comment等通用小图标，小图标默认是黑色，使用icon-white（其中一种）用来改变小图标颜色！-->
+  <div style="margin-bottom:15px">
+    <a href="#" target="blank" class="btn btn-success btn-large">
+	<i class="icon-shopping-cart icon-white"></i> 查看评论
+	</a>
+  </div>
+
+  <div style="margin-bottom:15px">
+    <button class="btn btn-primary btn-large" type="submit">选项</button>
+  </div>
+
+  <div style="margin-bottom:15px">
+    <button class="btn btn-primary" type="submit">结账</button>
+  </div>
+  
+  <div style="margin-bottom:15px">
+    <input class="btn" type="button" value="设置">
+  </div>
+  
+</div>
+</body>
+</html>
